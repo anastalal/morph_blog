@@ -36,3 +36,4 @@ php artisan key:generate
 ```bash
 php artisan migrate
 ```
+php artisan db:seed --class=ShieldSeeder
