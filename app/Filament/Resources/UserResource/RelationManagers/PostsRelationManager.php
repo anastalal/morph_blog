@@ -1,15 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\CategoryResource\RelationManagers;
+namespace App\Filament\Resources\UserResource\RelationManagers;
 
 use Filament\Forms;
-use App\Models\Post;
-use Filament\Tables;
 use Filament\Forms\Form;
+use Filament\Resources\RelationManagers\RelationManager;
+use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Resources\RelationManagers\RelationManager;
 
 class PostsRelationManager extends RelationManager
 {
@@ -50,11 +49,6 @@ class PostsRelationManager extends RelationManager
             ->actions([
                 // Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),
-                Tables\Actions\Action::make('view')
-                ->label('مشاهدة')
-                ->icon('heroicon-o-eye')
-                ->url(fn (Post $record): string => route('post.show',['slug' => $record->slog]))
-                ->openUrlInNewTab(true),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

@@ -1,7 +1,7 @@
 <div>
     
 <header>
-    <div class="bg-contain bg-center bg-no-repeat" style="background-image: url('{{ asset('storage/'.$post->banner) }}');">
+    <div class="bg-contain bg-center bg-no-repeat" style="background-image: url('{{ asset('storage/' . ($post->banner ?? 'default.svg')) }}');">
       <!-- Container -->
       <div class="mx-auto w-full max-w-7xl px-5 py-12 md:px-10 md:py-16 lg:py-20">
         <!-- Component -->
