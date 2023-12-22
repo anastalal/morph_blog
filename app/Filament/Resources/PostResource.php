@@ -73,7 +73,6 @@ class PostResource extends Resource
                             ->required()
                             ->rules(['alpha_dash'])
                             ->unique(ignoreRecord: true)
-                            // ->unique(Category::class,'slug')
                             ,
                             Forms\Components\Textarea::make('description')
                             ->label('الوصف')
@@ -84,6 +83,7 @@ class PostResource extends Resource
                 ->directory('uploads')
                 ->visibility('public')
                 ->required()
+                ->columnSpanFull()
                    ->label('صورة المقال'),
                 TinyEditor::make('content')->label('محتوى المقال')
                     ->required()

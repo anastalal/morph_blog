@@ -13,8 +13,8 @@ class StatsOverview extends BaseWidget
     protected function getStats(): array
     {
         return [
-            Stat::make('المقالات', Post::count())   ->description('عدد المقالات') ->descriptionIcon('heroicon-m-arrow-trending-up'),
-            Stat::make('المقالات', User::count())   ->description('عدد المستخدمين') ->descriptionIcon('heroicon-m-arrow-trending-up'),
+            Stat::make('مقالات', Post::count())   ->description('عدد المقالات') ->descriptionIcon('heroicon-m-arrow-trending-up'),
+            Stat::make('مستخدمين', User::count())   ->description('عدد المستخدمين') ->descriptionIcon('heroicon-o-users'),
         ];
     }
 }

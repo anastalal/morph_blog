@@ -8,6 +8,7 @@ simple blog project using Laravel Filamentphp and Livewire
 - :fire: **User registration and authentication** 
 - :fire: **Users Permissions**
 - :fire: **Add, view, and comment on posts**
+- :fire: **markdown support**
 
 ## Installation
 
@@ -32,8 +33,19 @@ cp .env.example .env
 ```bash
 php artisan key:generate
 ```
-6. Set up the database and run migrations:
+6. Set up the database and run migrations with seeder :
 ```bash
-php artisan migrate
+php artisan migrate --seed
 ```
-php artisan db:seed --class=ShieldSeeder
+7. Compile assets:
+```bash
+npm run build
+```
+8. Create Symbolic Link for Storage
+```bash
+php artisan storage:link
+```
+9. Start the development server:
+```bash
+php artisan serve
+```
