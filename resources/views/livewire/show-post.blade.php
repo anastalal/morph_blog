@@ -9,7 +9,6 @@
           <!-- Title -->
           <div class="flex flex-col items-center gap-y-5">
             <h1 class="text-center text-4xl font-bold md:text-6xl">{{ $post->title }}</h1>
-            {{-- <p class="text-center text-[#808080] max-w-lg text-sm sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquampurus sit amet luctus venenatis, lectus</p> --}}
           </div>
           <!-- Buttons -->
           

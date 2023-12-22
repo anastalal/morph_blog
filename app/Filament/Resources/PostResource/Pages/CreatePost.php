@@ -13,7 +13,6 @@ class CreatePost extends CreateRecord
     {
         $user = auth()->user();
         $data  = array_merge($data,array('user_id'=>$user->id ));
-       // dd($data);
         return $data;
     }
 }

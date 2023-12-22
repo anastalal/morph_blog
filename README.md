@@ -49,3 +49,19 @@ php artisan storage:link
 ```bash
 php artisan serve
 ```
+10. Preview 
+email: admin@morph.sa
+password: morph@admin
+## Support
+
+For support, email anasctalal@gmail.com or search for "coderans" on Google.
+
+
+## Screenshots
+
+![App Screenshot](https://github.com/anastalal/morph_blog/blob/main/Screenshots/1.png)
+
+![App Screenshot](https://github.com/anastalal/morph_blog/blob/main/Screenshots/2.png)
+
+
+![App Screenshot](https://github.com/anastalal/morph_blog/blob/main/Screenshots/3.png)

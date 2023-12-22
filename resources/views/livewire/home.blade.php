@@ -21,11 +21,7 @@
         @endforeach
       
         </div>
-        {{-- @if ($posts->hasMorePages())
-       <button class="inline-block rounded-xl bg-black px-8 py-4
-       text-center font-semibold text-white 
-       [box-shadow:rgb(19,_83,_254)_6px_6px]" wire:click="loadMore">تحميل المزيد </button>
-       @endif --}}
+       
        {{ $posts->links(data: ['scrollTo' => false]) }}
        
        

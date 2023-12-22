@@ -16,9 +16,6 @@
 
     <!-- Navigation Links -->
     <div class="mt-14 flex flex-col space-y-8 lg:mt-0 lg:flex lg:flex-row lg:space-x-1 lg:space-y-0" x-bind:class="isOpen ? 'show' : 'hidden'">
-      {{-- <a href="#" class="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800">Templates</a>
-      <a href="#" class="font-inter rounded-lg lg:px-6 lg:py-4 lg:hover:bg-gray-50 lg:hover:text-gray-800">Pricing</a>
-      <a href="#" class="font-inter rounded-lg pb-8 lg:px-6 lg:py-4 lg:pb-0 lg:hover:bg-gray-50 lg:hover:text-gray-800">FAQs</a> --}}
     </div> <!-- MENU CONTENT 2 -->
 
     <!-- Authentication Links -->

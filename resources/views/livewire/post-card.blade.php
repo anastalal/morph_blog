@@ -11,8 +11,6 @@
               <h6 class="text-base font-semibold">{{ $post->user->name }}</h6>
               <div class="flex items-start max-[991px]:flex-col lg:items-center">
                 <p class="text-sm text-[#636262]">{{ $post->created_at->diffForHumans() }}</p>
-                {{-- <p class="ml-2 mr-2 text-sm text-[#636262] max-[991px]:hidden">-</p> --}}
-                {{-- <p class="text-sm text-[#636262]">6 mins read</p> --}}
               </div>
             </div>
           </div>
